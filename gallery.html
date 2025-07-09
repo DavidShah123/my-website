@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+    <nav class="container mx-auto flex justify-between">
+      <h1 class="text-xl font-bold">My Website</h1>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        <li><a href="gallery.html" class="hover:underline font-semibold underline">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container mx-auto px-6 py-8">
+    <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">🖼️ My Image Gallery</h2>
+    
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <!-- Image Card -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg overflow-hidden">
+        <img src="https://picsum.photos/300?random=1" alt="Image 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Image 1</h3>
+          <p class="text-sm text-gray-600">Sample image caption.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg overflow-hidden">
+        <img src="https://picsum.photos/300?random=2" alt="Image 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Image 2</h3>
+          <p class="text-sm text-gray-600">Another sample caption.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg overflow-hidden">
+        <img src="https://picsum.photos/300?random=3" alt="Image 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Image 3</h3>
+          <p class="text-sm text-gray-600">Cool placeholder image.</p>
+        </div>
+      </div>
+
+      <!-- Add more as needed -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center p-4 mt-10">
+    <p class="text-sm text-gray-600">&copy; 2025 David Shah. All rights reserved.</p>
+  </footer>
+</body>
+</html>
