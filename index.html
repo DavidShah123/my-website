@@ -5,21 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cyber Crimes In India</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="bg-blue-700 text-white p-4">
-    <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Cyber Crimes In India</h1>
-      <ul class="flex space-x-4 text-sm sm:text-base">
-        <li><a href="index.html" class="underline font-semibold">Home</a></li>
-        <li><a href="about.html" class="hover:underline">About</a></li>
-        <li><a href="contact.html" class="hover:underline">Contact</a></li>
-        <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class="bg-blue-600 text-white p-4 sticky top-0 z-50 shadow-md">
+  <nav class="container mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold">Cyber Crimes In India</h1>
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="#tips" class="hover:underline">Tips</a></li>
+      <li><a href="#hotspots" class="hover:underline">Hotspots</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <!-- Hero Section -->
   <section class="relative">
@@ -213,11 +215,43 @@
     </div>
   </div>
 </section>
+<!-- Victim Help Section -->
+<section class="bg-red-50 py-12 mt-10">
+  <div class="container mx-auto text-center px-6">
+    <h2 class="text-3xl font-bold text-red-700 mb-6">🚨 What To Do If You're a Victim</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
+      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
+        <h3 class="font-semibold text-lg text-red-600">📞 Report Immediately</h3>
+        <p class="text-sm text-gray-700 mt-2">Dial 1930 or visit <a href="https://cybercrime.gov.in" class="text-blue-600 underline">cybercrime.gov.in</a> to report.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-semibold text-lg text-red-600">🔒 Freeze Accounts</h3>
+        <p class="text-sm text-gray-700 mt-2">Contact your bank or wallet provider to freeze transactions.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold text-lg text-red-600">📝 Collect Evidence</h3>
+        <p class="text-sm text-gray-700 mt-2">Save emails, screenshots, phone numbers, chat logs, or transaction IDs.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Cyber Crime Map -->
+<section class="bg-gray-50 py-12 mt-10">
+  <div class="container mx-auto text-center px-6">
+    <h2 class="text-3xl font-bold text-blue-700 mb-8">🗺️ Cyber Crime Map - Major Indian Cities</h2>
+    <img src="images/india-map.jpg" alt="Map of India" class="mx-auto max-w-xl mb-4 rounded shadow" />
+    <p class="text-gray-600 text-sm">Click on a city to explore more (coming soon)</p>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-gray-100 text-center p-4 mt-10">
     <p class="text-sm text-gray-600">&copy; 2025 David Shah. All rights reserved.</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
