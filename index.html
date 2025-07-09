@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home</title>
+  <title>Cyber Crimes In India</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <header class="bg-blue-600 text-white p-4">
-    <nav class="container mx-auto flex justify-between">
-      <h1 class="text-xl font-bold">My Website</h1>
-      <ul class="flex space-x-4">
-        <li><a href="index.html" class="hover:underline font-semibold underline">Home</a></li>
+<body class="text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Cyber Crimes In India</h1>
+      <ul class="flex space-x-4 text-sm sm:text-base">
+        <li><a href="index.html" class="underline font-semibold">Home</a></li>
         <li><a href="about.html" class="hover:underline">About</a></li>
         <li><a href="contact.html" class="hover:underline">Contact</a></li>
         <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
@@ -19,49 +21,46 @@
     </nav>
   </header>
 
-  <main class="container mx-auto p-6 space-y-8">
-    <section class="bg-yellow-100 p-6 rounded-lg shadow">
-      <h2 class="text-2xl font-bold mb-2">👋 1️⃣ Welcome</h2>
-      <p class="text-lg">Hello! I'm <strong>David Shah</strong>, and I'm learning how to build websites using HTML, CSS, JavaScript, and Tailwind CSS.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="images/banner.jpg" alt="Cyber Crime Banner" class="w-full h-[300px] object-cover brightness-75" />
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+      <h2 class="text-4xl font-bold mb-2">Cyber Crimes In India</h2>
+      <p class="text-lg max-w-2xl">Explore how cyber threats are rising in India and how to protect yourself.</p>
+    </div>
+  </section>
 
-    <section class="bg-green-100 p-6 rounded-lg shadow">
-      <h2 class="text-2xl font-bold mb-2">🛠️ 2️⃣ Interactive Features</h2>
-      <div class="space-y-4">
-        <button onclick="alert('You clicked me!')" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">
-          Click Me
-        </button>
-        <button onclick="document.body.style.backgroundColor='#fef3c7'" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">
-          Change Background
-        </button>
-        <button onclick="document.body.classList.toggle('dark')" class="bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded">
-          Toggle Dark Mode
-        </button>
-        <div id="time" class="text-lg font-mono mt-4"></div>
-        <script>
-          function updateTime() {
-            document.getElementById('time').innerText = "🕒 Time: " + new Date().toLocaleTimeString();
-          }
-          setInterval(updateTime, 1000);
-          updateTime();
-        </script>
-      </div>
-    </section>
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10 max-w-4xl">
+    <h3 class="text-2xl font-bold text-blue-700 mb-4">Understanding the Rise of Cyber Crimes</h3>
+    <p class="mb-4">
+      In recent years, cyber crimes in India have seen a significant increase due to widespread internet access and digital transformation. Criminals use technology to commit offenses like identity theft, online fraud, cyberstalking, and hacking. The growth of smartphones and digital payments has created new vulnerabilities for both individuals and organizations.
+    </p>
 
-    <section class="bg-purple-100 p-6 rounded-lg shadow">
-      <h2 class="text-2xl font-bold mb-2">🧮 3️⃣ Counter</h2>
-      <p class="text-xl">Counter: <span id="counter">0</span></p>
-      <button onclick="count++ ; updateCounter();" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded mt-2 mr-2">+1</button>
-      <button onclick="count = 0 ; updateCounter();" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded mt-2">Reset</button>
-      <script>
-        let count = 0;
-        function updateCounter() {
-          document.getElementById("counter").innerText = count;
-        }
-      </script>
-    </section>
+    <h3 class="text-xl font-semibold text-blue-600 mb-2">Hotspots of Cyber Crimes</h3>
+    <p class="mb-4">
+      Cities like Hyderabad, Bengaluru, Delhi, Mumbai, and Kolkata have emerged as major hotspots for cybercrime activity. These cities are not only densely populated but also digitally advanced, making them targets for fraudsters who exploit weak cybersecurity systems or human error.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-2">Types of Cyber Crimes</h3>
+    <p class="mb-4">
+      Common cyber crimes include phishing, ransomware attacks, credit card fraud, cyberbullying, and data breaches. Each of these attacks can result in serious consequences such as financial loss, reputation damage, and even legal issues. Many crimes are carried out using fake emails, malicious links, or fraudulent websites.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-2">Precautionary Measures</h3>
+    <p class="mb-4">
+      To prevent becoming a victim, users should follow basic cyber hygiene practices. Use strong passwords, enable two-factor authentication, avoid clicking on suspicious links, and regularly update software and antivirus tools. It's also essential to report suspicious activity to cyber police or helplines like 1930 in India.
+    </p>
+
+    <!-- Call to Action -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="gallery.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">View Gallery</a>
+      <a href="contact.html" class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg shadow hover:bg-gray-300">Contact</a>
+      <a href="about.html" class="px-6 py-3 bg-blue-100 text-blue-800 rounded-lg shadow hover:bg-blue-200">Learn More</a>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-gray-100 text-center p-4 mt-10">
     <p class="text-sm text-gray-600">&copy; 2025 David Shah. All rights reserved.</p>
   </footer>
