@@ -59,6 +59,80 @@
       <a href="about.html" class="px-6 py-3 bg-blue-100 text-blue-800 rounded-lg shadow hover:bg-blue-200">Learn More</a>
     </div>
   </main>
+<!-- Statistics Section -->
+<section class="bg-gray-50 py-12 mt-10">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-6">📊 Cyber Crime Statistics</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-4xl font-bold text-blue-600" id="stat1">0</h3>
+        <p class="mt-2 text-gray-600">Cases in Hyderabad</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-4xl font-bold text-blue-600" id="stat2">0</h3>
+        <p class="mt-2 text-gray-600">Cases in Delhi</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-4xl font-bold text-blue-600" id="stat3">0</h3>
+        <p class="mt-2 text-gray-600">Cases in Mumbai</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Types of Cyber Crimes -->
+<section class="bg-white py-12">
+  <div class="container mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-blue-700 mb-8">🛡️ Types of Cyber Crimes</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-blue-100 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-800">🎣 Phishing</h3>
+        <p class="text-sm mt-2 text-gray-700">Fake emails/websites tricking users into revealing sensitive info.</p>
+      </div>
+      <div class="bg-red-100 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-red-800">🛑 Ransomware</h3>
+        <p class="text-sm mt-2 text-gray-700">Malware that locks systems until a ransom is paid.</p>
+      </div>
+      <div class="bg-yellow-100 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-yellow-800">💳 Credit Card Fraud</h3>
+        <p class="text-sm mt-2 text-gray-700">Unauthorized use of payment details to make transactions.</p>
+      </div>
+      <div class="bg-purple-100 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-purple-800">📱 Cyberstalking</h3>
+        <p class="text-sm mt-2 text-gray-700">Harassment or threats through digital communication.</p>
+      </div>
+      <div class="bg-green-100 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-green-800">🕵️ Identity Theft</h3>
+        <p class="text-sm mt-2 text-gray-700">Stealing personal data to impersonate someone online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Count-up Animation Script -->
+<script>
+  function animateCount(id, target, speed = 50) {
+    let count = 0;
+    const el = document.getElementById(id);
+    const step = () => {
+      count += Math.ceil(target / 40);
+      if (count >= target) {
+        el.textContent = target.toLocaleString();
+      } else {
+        el.textContent = count.toLocaleString();
+        requestAnimationFrame(step);
+      }
+    };
+    step();
+  }
+
+  // Trigger animation when page loads
+  window.addEventListener('DOMContentLoaded', () => {
+    animateCount("stat1", 14250);
+    animateCount("stat2", 19800);
+    animateCount("stat3", 17320);
+  });
+</script>
 
   <!-- Footer -->
   <footer class="bg-gray-100 text-center p-4 mt-10">
